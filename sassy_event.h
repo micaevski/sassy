@@ -51,15 +51,3 @@ using Queue = std::queue<std::variant<Events...>>;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-// Event Classification
-
-template <typename T>
-struct AudioEvent : sassy::Event<T> {};
-
-template <typename Event>
-using isAudioEvent_t = typename std::enable_if<std::is_base_of<Event, AudioEvent<Event>>::value>::type;
-
-template <typename... Events, typename T = AudioEventQueue<Event>>
-using AudioEventQueue = sassy::Queue<Events...>;
-
-// ///////////////////////////////////////////////////////////////////////
