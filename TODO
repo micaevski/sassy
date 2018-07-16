@@ -1,0 +1,1 @@
+factory function for enumerated events - for example CellEvent<1>, including helper for a queue to consume these types
