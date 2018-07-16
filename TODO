@@ -1,1 +1,2 @@
-factory function for enumerated events - for example CellEvent<1>, including helper for a queue to consume these types
+1) factory function for enumerated events - for example CellEvent<1>, including helper for a queue to consume these types
+2) synchronization - solving the problem of adding listeners and dispatching events simultaneously
